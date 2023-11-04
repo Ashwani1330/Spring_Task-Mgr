@@ -33,7 +33,7 @@ public class TaskService {
     }
 
     public TaskEntity getTasksById(int id) {
-        for (TaskEntity task : tasks)
+        for (TaskEntity task : tasks)  // traversing in the array tasks
             if (task.getId() == id) {
                 return task;
             }
